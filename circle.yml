@@ -10,8 +10,8 @@ test:
     - cat /tmp/test.txt
   override:
     - ansible-playbook --help
+    - cat ~/.ssh/config
   post:
     - echo "test post" >> /tmp/test.txt
     - cat /tmp/test.txt
     - rm -rf /tmp/test.txt
-
