@@ -2,8 +2,7 @@ machine:
   timezone: Asia/Tokyo
 dependencies:
   pre:
-    - python --version
-    - pip --version
+    - pip install --upgrade pip
     - pip install ansible
 test:
   pre:
