@@ -11,6 +11,7 @@ test:
   override:
     - ansible-playbook --help
     - cat ~/.ssh/config
+    - ssh -i ~/.ssh/id_172.31.19.70 e_fujikawa@172.31.19.70
   post:
     - echo "test post" >> /tmp/test.txt
     - cat /tmp/test.txt
